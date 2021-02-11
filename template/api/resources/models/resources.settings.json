@@ -1,0 +1,74 @@
+{
+  "kind": "collectionType",
+  "collectionName": "resources",
+  "info": {
+    "name": "resources",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "uid": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "author": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "rsync": {
+      "type": "string"
+    },
+    "published": {
+      "type": "date"
+    },
+    "size": {
+      "type": "decimal"
+    },
+    "sample": {
+      "type": "string"
+    },
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "languages": {
+      "collection": "languages",
+      "via": "resources"
+    },
+    "tags": {
+      "collection": "tags",
+      "via": "resources"
+    },
+    "licenses": {
+      "collection": "licenses",
+      "via": "resources"
+    },
+    "types": {
+      "collection": "type",
+      "via": "resources"
+    },
+    "host": {
+      "type": "string"
+    }
+  }
+}

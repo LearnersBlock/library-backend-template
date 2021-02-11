@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "types",
+  "info": {
+    "name": "type",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "type": {
+      "type": "string",
+      "unique": true
+    },
+    "resources": {
+      "via": "types",
+      "collection": "resources",
+      "dominant": true
+    }
+  }
+}

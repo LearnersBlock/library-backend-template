@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "licenses",
+  "info": {
+    "name": "licenses",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "license": {
+      "type": "string",
+      "unique": true
+    },
+    "resources": {
+      "via": "licenses",
+      "collection": "resources",
+      "dominant": true
+    }
+  }
+}

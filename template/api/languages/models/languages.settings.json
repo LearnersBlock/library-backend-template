@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "languages",
+  "info": {
+    "name": "languages"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "language": {
+      "type": "string",
+      "unique": true
+    },
+    "resources": {
+      "via": "languages",
+      "collection": "resources",
+      "dominant": true
+    }
+  }
+}
