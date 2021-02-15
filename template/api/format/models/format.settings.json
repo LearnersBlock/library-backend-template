@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "types",
+  "collectionName": "formats",
   "info": {
-    "name": "type",
+    "name": "formats",
     "description": ""
   },
   "options": {
@@ -16,9 +16,8 @@
       "unique": true
     },
     "resources": {
-      "via": "types",
-      "collection": "resources",
-      "dominant": true
+      "via": "formats",
+      "collection": "resources"
     }
   }
 }

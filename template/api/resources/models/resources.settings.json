@@ -63,12 +63,17 @@
       "collection": "licenses",
       "via": "resources"
     },
-    "types": {
-      "collection": "type",
-      "via": "resources"
-    },
     "host": {
       "type": "string"
+    },
+    "RTL": {
+      "type": "boolean",
+      "default": false
+    },
+    "formats": {
+      "collection": "format",
+      "via": "resources",
+      "dominant": true
     }
   }
 }
