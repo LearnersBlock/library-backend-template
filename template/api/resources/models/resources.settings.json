@@ -11,30 +11,23 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "name": {
-      "type": "string",
-      "unique": true,
-      "required": true
-    },
     "description": {
-      "type": "richtext"
+      "type": "richtext",
+      "maxLength": 1100
     },
     "uid": {
       "type": "uid",
-      "targetField": "name",
-      "required": true
+      "required": true,
+      "targetField": "name"
     },
     "author": {
       "type": "string"
     },
-    "url": {
+    "download_url": {
       "type": "string"
     },
     "rsync": {
       "type": "string"
-    },
-    "published": {
-      "type": "date"
     },
     "size": {
       "type": "decimal"
@@ -66,14 +59,18 @@
     "host": {
       "type": "string"
     },
-    "RTL": {
-      "type": "boolean",
-      "default": false
-    },
     "formats": {
       "collection": "format",
       "via": "resources",
       "dominant": true
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "author_website": {
+      "type": "string"
     }
   }
 }
