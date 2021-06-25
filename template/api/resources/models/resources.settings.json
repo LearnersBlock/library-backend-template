@@ -45,24 +45,19 @@
       "required": false
     },
     "languages": {
-      "collection": "languages",
-      "via": "resources"
+      "via": "resources",
+      "collection": "languages"
     },
     "tags": {
-      "collection": "tags",
-      "via": "resources"
+      "via": "resources",
+      "collection": "tags"
     },
     "licenses": {
-      "collection": "licenses",
-      "via": "resources"
+      "via": "resources",
+      "collection": "licenses"
     },
     "host": {
       "type": "string"
-    },
-    "formats": {
-      "collection": "format",
-      "via": "resources",
-      "dominant": true
     },
     "name": {
       "type": "string",
@@ -71,6 +66,14 @@
     },
     "author_website": {
       "type": "string"
+    },
+    "levels": {
+      "via": "resources",
+      "collection": "levels"
+    },
+    "formats": {
+      "via": "resources",
+      "collection": "format"
     }
   }
 }

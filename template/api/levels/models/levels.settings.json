@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "formats",
+  "collectionName": "levels",
   "info": {
-    "name": "formats",
+    "name": "levels",
     "description": ""
   },
   "options": {
@@ -16,9 +16,8 @@
     }
   },
   "attributes": {
-    "type": {
+    "level": {
       "type": "string",
-      "unique": true,
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -26,8 +25,8 @@
       }
     },
     "resources": {
+      "via": "levels",
       "collection": "resources",
-      "via": "formats",
       "dominant": true
     }
   }
