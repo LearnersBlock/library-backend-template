@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "levels",
+  "collectionName": "subjects",
   "info": {
-    "name": "levels",
-    "description": ""
+    "name": "subjects"
   },
   "options": {
     "increments": true,
@@ -12,14 +11,13 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "level": {
+    "subject": {
       "type": "string",
-      "pluginOptions": {}
+      "unique": true
     },
     "resources": {
-      "via": "levels",
-      "collection": "resources",
-      "dominant": true
+      "via": "subjects",
+      "collection": "resources"
     }
   }
 }

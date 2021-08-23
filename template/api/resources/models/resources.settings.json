@@ -42,15 +42,12 @@
         "images"
       ],
       "plugin": "upload",
-      "required": false
+      "required": false,
+      "pluginOptions": {}
     },
     "languages": {
       "via": "resources",
       "collection": "languages"
-    },
-    "tags": {
-      "via": "resources",
-      "collection": "tags"
     },
     "licenses": {
       "via": "resources",
@@ -74,6 +71,16 @@
     "formats": {
       "via": "resources",
       "collection": "format"
+    },
+    "categories": {
+      "via": "resources",
+      "collection": "category",
+      "dominant": true
+    },
+    "subjects": {
+      "collection": "subjects",
+      "via": "resources",
+      "dominant": true
     }
   }
 }

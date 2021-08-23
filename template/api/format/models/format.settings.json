@@ -10,24 +10,16 @@
     "timestamps": true,
     "draftAndPublish": false
   },
-  "pluginOptions": {
-    "i18n": {
-      "localized": true
-    }
-  },
+  "pluginOptions": {},
   "attributes": {
     "type": {
       "type": "string",
       "unique": true,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
+      "pluginOptions": {}
     },
     "resources": {
-      "collection": "resources",
       "via": "formats",
+      "collection": "resources",
       "dominant": true
     }
   }

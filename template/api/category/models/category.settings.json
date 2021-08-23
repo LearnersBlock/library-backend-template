@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "levels",
+  "collectionName": "categories",
   "info": {
-    "name": "levels",
+    "name": "categories",
     "description": ""
   },
   "options": {
@@ -12,14 +12,13 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "level": {
-      "type": "string",
-      "pluginOptions": {}
-    },
     "resources": {
-      "via": "levels",
-      "collection": "resources",
-      "dominant": true
+      "via": "categories",
+      "collection": "resources"
+    },
+    "category": {
+      "type": "string",
+      "unique": true
     }
   }
 }
